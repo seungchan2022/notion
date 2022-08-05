@@ -21,7 +21,7 @@ def dijkstra(start):
     q = []
     # 시작 노드로 가기위한 최단 경로 0으로 설정하고, 큐에 삽입
     distance[start] = 0
-    heapq.heappush((0, start))      # (거리, 노드)
+    heapq.heappush(q, (0, start))      # (거리, 노드)
 
     while q:
         # 가장 최단 거리가 짧은 노드에 대한 정보 꺼내기
