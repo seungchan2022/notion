@@ -29,10 +29,10 @@ def topology_sort():
     while q:
         now = q.popleft()
         result.append(now)
-        # 해당 원소아 연결된 노드들의 진입차수에서 -1
+        # 해당 원소와 연결된 노드들의 진입차수에서 -1
         for i in graph[now]:
             indegree[i] -= 1
-            # 새롭게 진입차수가 0이 되는 큐에 삽입
+            # 새롭게 진입차수가 0이 되는 노드 큐에 삽입
             if indegree[i] == 0:
                 q.append(i)
 
