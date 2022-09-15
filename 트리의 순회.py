@@ -44,3 +44,24 @@ print()
 in_order(tree['A'])
 print()
 post_order(tree['A'])
+
+
+
+
+"""
+         A
+      /     \
+    B         C
+  /   \     /   \
+ D     E   F     G
+
+입력 예시
+7
+A B C
+B D E
+C F G
+D None None
+E None None
+F None None
+G None None
+"""
