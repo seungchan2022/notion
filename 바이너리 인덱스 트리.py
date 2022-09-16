@@ -28,7 +28,7 @@ def update(i, dif):
 def interval_sum(start, end):
     return prefix_sum(end) - prefix_sum(start - 1)
 
-for i in range(n):
+for i in range(1, n + 1):
     x = int(input())
     arr[i] = x
     update(i, x)
