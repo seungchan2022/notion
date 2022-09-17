@@ -100,8 +100,8 @@ for _ in range(m + k):
     if q == 1:
         changeVal(leftNodeStartIndex + s, e)    # (tree에서 시작 인덱스, 변경 값)
     elif q == 2:
-        s += leftNodeStartIndex
-        e += leftNodeStartIndex
+        s += leftNodeStartIndex     # tree에서 시작 인덱스
+        e += leftNodeStartIndex     # tree에서 
         print(getSum(s, e))
 """
 
