@@ -1,4 +1,5 @@
 # 바이너리 인덱스 트리
+# 변경 되는 데이터 에서 구간 합 구하는 문제
 
 import sys
 input = sys.stdin.readline
