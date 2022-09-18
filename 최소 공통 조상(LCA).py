@@ -42,8 +42,8 @@ def lca(a, b):
     # 먼저 깊이(depth)가 동일하도록
     # 큰 크기부터 작은 크기까지 차례대로 확인 하면서 거슬러 올라가기 (ex) 15: 8 -> 4 -> 2 -> 1 
     for i in range(LOG - 1, -1, -1):
-        if d[b] - d[a] >= (1 << i):     # 더 깊은쪽의 깊이가 줄어들도록
-            b = parent[b][i]
+        if d[b] - d[a] >= (1 << i):     
+            b = parent[b][i]        # 더 깊은쪽의 깊이가 줄어들도록
     # 부모가 같아지도록
     if a == b:
         return a
