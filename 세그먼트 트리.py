@@ -1,4 +1,6 @@
-# 세그먼트 트리
+# 2042
+
+# 세그먼트 트리(문제 마다 함수 달라짐)
 
 import sys
 input = sys.stdin.readline
