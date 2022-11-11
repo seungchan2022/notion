@@ -45,7 +45,7 @@ def getSum(s, e):   # (시작 인덱스, 종료 인덱스)
             partSum += tree[s]
             s += 1
         if e % 2 == 0:
-            partSum += tree[s]
+            partSum += tree[e]
             e -= 1
         s //= 2
         e //= 2
@@ -59,4 +59,3 @@ for _ in range(m + k):
         s += leftNodeStartIndex     # tree에서 시작인덱스
         e += leftNodeStartIndex     # tree에서 종료인덱스
         print(getSum(s, e))
-
