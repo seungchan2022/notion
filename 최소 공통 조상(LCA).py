@@ -53,7 +53,7 @@ def lca(a, b):
             a = parent[a][i]
             b = parent[b][i]
     # 이후에 부모가 찾고자 하는 조상
-    parent[a][0]
+    return parent[a][0]
 
 set_parent()
 
