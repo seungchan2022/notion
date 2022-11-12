@@ -1,4 +1,4 @@
-# 개선된 최소 공통 조상(다이나믹 프로그래밍 이용)
+# 최소 공통 조상(LCA) 찾기 -> 다이나믹 프로그래밍 이용
 
 import sys
 sys.setrecursionlimit(int(1e5))
